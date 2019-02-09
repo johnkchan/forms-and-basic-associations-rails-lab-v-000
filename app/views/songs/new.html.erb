@@ -9,7 +9,7 @@
   <%= f.text_field :genre_name, list: "genres_autocomplete" %>
   <datalist id="genres_autocomplete">
     <% Genre.all.each do |genre| %>
-      <option value="<%= genre.name %>">
+      <option value="<%= genre.name %>" id="song_genre_id">
     <% end %>
   </datalist>
   <textarea name="post[genre]"></textarea>
